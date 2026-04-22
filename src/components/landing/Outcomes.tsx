@@ -43,19 +43,19 @@ const Outcomes = () => {
       }
       subtitle="در پایان دوره، شرکت‌کننده با مجموعه‌ای از قابلیت‌های نصب‌شده روی کار روزمره‌اش بیرون می‌آید — نه با چند فایل اسلاید."
     >
-      <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-5">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
         {outcomes.map(({ icon: Icon, title, body }, idx) => (
           <div
             key={title}
-            className={`glass-panel group relative overflow-hidden rounded-2xl p-6 transition-smooth hover:-translate-y-1 ${
-              idx === 0 ? "lg:col-span-2 ring-1 ring-primary/30" : ""
+            className={`glass-panel group relative flex h-full flex-col overflow-hidden rounded-2xl p-5 transition-smooth hover:-translate-y-1 ${
+              idx === 0 ? "ring-1 ring-primary/30" : ""
             }`}
           >
-            <div className="mb-5 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary ring-1 ring-primary/30">
+            <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary ring-1 ring-primary/30">
               <Icon className="h-5 w-5" />
             </div>
-            <h3 className="mb-2 font-display text-base font-semibold text-foreground">{title}</h3>
-            <p className="text-sm leading-loose text-muted-foreground">{body}</p>
+            <h3 className="mb-2 font-display text-sm font-semibold text-foreground">{title}</h3>
+            <p className="text-xs leading-relaxed text-muted-foreground">{body}</p>
           </div>
         ))}
       </div>
