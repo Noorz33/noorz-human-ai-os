@@ -33,11 +33,10 @@ const Instructor = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-background/85 via-transparent to-transparent" />
             <figcaption className="absolute bottom-5 right-5 left-5 flex items-end justify-between text-xs">
               <div>
-                <div className="font-display text-base text-foreground">فرزاد نورعلی</div>
-                <div className="text-muted-foreground">Farzad Nooraei · Course Designer</div>
+                <div className="font-display text-base text-foreground"></div>
+                <div className="text-muted-foreground"></div>
               </div>
               <span className="rounded-full bg-background/60 px-3 py-1 text-foreground/70 backdrop-blur">
-                Portrait · قابل جایگزینی
               </span>
             </figcaption>
           </figure>
