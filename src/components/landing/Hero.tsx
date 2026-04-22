@@ -75,29 +75,6 @@ const Hero = () => {
         </div>
       </figure>
 
-      <div className="container relative">
-        <div className="mx-auto max-w-4xl pt-8 pb-16 text-center animate-fade-up md:pt-10 md:pb-20">
-          <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Button variant="hero" size="xl" asChild>
-              <a href="#contact">درخواست جلسه معرفی</a>
-            </Button>
-            <Button variant="outlineGlow" size="xl" asChild>
-              <a href="#org">دریافت نسخه سازمانی دوره</a>
-            </Button>
-          </div>
-
-          {/* Trust bar */}
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-muted-foreground">
-            {["فردمحور", "کاربردی", "مسئله‌محور", "گروه‌های کوچک"].map((tag) => (
-              <div key={tag} className="flex items-center gap-2">
-                <span className="h-1 w-1 rounded-full bg-primary" />
-                <span>{tag}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
       {/* Bottom fade */}
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-b from-transparent to-background" />
     </section>
