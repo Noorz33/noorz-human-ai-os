@@ -20,25 +20,16 @@ const Instructor = () => {
           <figure
             data-image-slot="instructor"
             aria-label="جایگاه پرتره مدرس — قابل تعویض"
-            className="relative aspect-[4/5] overflow-hidden rounded-3xl edge-glow shadow-elegant"
+            className="relative overflow-hidden rounded-3xl edge-glow shadow-elegant"
           >
             <img
               src={portrait}
               alt="پرتره فرزاد نورعلی"
               loading="lazy"
-              className="h-full w-full object-cover"
+              className="h-auto w-full object-contain"
               width={1024}
               height={1280}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-background/85 via-transparent to-transparent" />
-            <figcaption className="absolute bottom-5 right-5 left-5 flex items-end justify-between text-xs">
-              <div>
-                <div className="font-display text-base text-foreground"></div>
-                <div className="text-muted-foreground"></div>
-              </div>
-              <span className="rounded-full bg-background/60 px-3 py-1 text-foreground/70 backdrop-blur">
-              </span>
-            </figcaption>
           </figure>
         </div>
 
