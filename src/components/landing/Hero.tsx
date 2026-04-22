@@ -22,34 +22,10 @@ const Hero = () => {
         }}
       />
 
-      {/* Full-width hero image banner */}
-      <figure
-        data-image-slot="hero"
-        aria-label="جایگاه تصویر اصلی هیرو — قابل تعویض"
-        className="relative w-full overflow-hidden"
-      >
-        <img
-          src={heroImage}
-          alt="حرفه‌ای در حال کار در شهری مشترک از انسان و هوش مصنوعی"
-          className="h-[38vh] w-full object-cover sm:h-[44vh] md:h-[52vh] lg:h-[58vh]"
-          width={1920}
-          height={900}
-        />
-        {/* Cinematic gradient overlays for legibility */}
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-l from-background/60 via-transparent to-background/60" />
-
-        {/* Brand chip */}
-        <div className="absolute top-5 right-5 inline-flex items-center gap-2 rounded-full border border-hairline/70 bg-background/50 px-4 py-1.5 text-xs font-medium text-primary backdrop-blur">
-          <span className="h-1.5 w-1.5 rounded-full bg-primary shadow-glow" />
-          <span className="font-display tracking-wide">Noorz · Human × AI Operating System</span>
-        </div>
-      </figure>
-
       <div className="container relative">
-        <div className="mx-auto max-w-4xl pt-10 pb-20 text-center animate-fade-up md:pt-14 md:pb-28">
+        <div className="mx-auto max-w-4xl pt-6 pb-8 text-center animate-fade-up md:pt-10 md:pb-12">
           {/* Human × AI icon mark */}
-          <div className="mx-auto mb-7 inline-flex items-center gap-3 rounded-2xl border border-hairline/70 bg-surface/60 px-5 py-3 backdrop-blur">
+          <div className="mx-auto mb-6 inline-flex items-center gap-3 rounded-2xl border border-hairline/70 bg-surface/60 px-5 py-3 backdrop-blur">
             <span className="relative inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary/15 ring-1 ring-primary/40">
               <UserRound className="h-5 w-5 text-primary" strokeWidth={2.2} />
               {/* AI sparkle showing the human "raised to the power of AI" */}
@@ -62,18 +38,46 @@ const Hero = () => {
             </span>
           </div>
 
-          <h1 className="font-display text-3xl font-bold leading-[1.25] text-foreground sm:text-4xl md:text-5xl lg:text-[56px]">
+          <h1 className="font-display text-3xl font-bold leading-[1.25] text-foreground sm:text-4xl md:text-5xl lg:text-[52px]">
             <span className="block">با هوش مصنوعی</span>
             <span className="text-gradient-green">توانمندی‌هاتو به توان برسون</span>
           </h1>
 
-          <p className="mx-auto mt-7 max-w-2xl text-base leading-loose text-muted-foreground md:text-lg">
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-loose text-muted-foreground md:text-lg">
             قدرت هوش مصنوعی از بیرون دیده نمی‌شه. باید واردش بشی تا بفهمی.
             <br className="hidden sm:block" />
             این دوره کمک می‌کنه افراد سازمان بیاموزند چطور از هوش مصنوعی در کار واقعی‌شان خروجی بگیرند.
           </p>
+        </div>
+      </div>
 
-          <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
+      {/* Full-width hero image banner */}
+      <figure
+        data-image-slot="hero"
+        aria-label="جایگاه تصویر اصلی هیرو — قابل تعویض"
+        className="relative w-full overflow-hidden"
+      >
+        <img
+          src={heroImage}
+          alt="حرفه‌ای در حال کار در شهری مشترک از انسان و هوش مصنوعی"
+          className="h-[28vh] w-full object-cover sm:h-[34vh] md:h-[40vh] lg:h-[44vh]"
+          width={1920}
+          height={900}
+        />
+        {/* Cinematic gradient overlays for legibility */}
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-l from-background/40 via-transparent to-background/40" />
+
+        {/* Brand chip */}
+        <div className="absolute top-5 right-5 inline-flex items-center gap-2 rounded-full border border-hairline/70 bg-background/50 px-4 py-1.5 text-xs font-medium text-primary backdrop-blur">
+          <span className="h-1.5 w-1.5 rounded-full bg-primary shadow-glow" />
+          <span className="font-display tracking-wide">Noorz · Human × AI Operating System</span>
+        </div>
+      </figure>
+
+      <div className="container relative">
+        <div className="mx-auto max-w-4xl pt-8 pb-16 text-center animate-fade-up md:pt-10 md:pb-20">
+          <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button variant="hero" size="xl" asChild>
               <a href="#contact">درخواست جلسه معرفی</a>
             </Button>
@@ -83,7 +87,7 @@ const Hero = () => {
           </div>
 
           {/* Trust bar */}
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-muted-foreground">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-muted-foreground">
             {["فردمحور", "کاربردی", "مسئله‌محور", "گروه‌های کوچک"].map((tag) => (
               <div key={tag} className="flex items-center gap-2">
                 <span className="h-1 w-1 rounded-full bg-primary" />
