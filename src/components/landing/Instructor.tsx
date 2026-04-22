@@ -1,5 +1,5 @@
 import Section from "./Section";
-import portrait from "@/assets/instructor-portrait.jpg";
+import portrait from "@/assets/instructor-portrait.png";
 
 const Instructor = () => {
   return (
