@@ -40,13 +40,13 @@ const Hero = () => {
 
           <h1 className="font-display text-3xl font-bold leading-[1.25] text-foreground sm:text-4xl md:text-5xl lg:text-[52px]">
             <span className="block">با هوش مصنوعی</span>
-            <span className="text-gradient-green">توانمندی‌هاتو به توان برسون</span>
+            <span className="text-gradient-green">توانمندی‌هات رو به توان برسون</span>
           </h1>
 
           <p className="mx-auto mt-5 max-w-2xl text-base leading-loose text-muted-foreground md:text-lg">
             قدرت هوش مصنوعی از بیرون دیده نمی‌شه. باید واردش بشی تا بفهمی.
             <br className="hidden sm:block" />
-            این دوره کمک می‌کنه افراد سازمان بیاموزند چطور از هوش مصنوعی در کار واقعی‌شان خروجی بگیرند.
+            این دوره کمک می‌کنه افراد سازمانت یاد بگیرن چطور با هوش مصنوعی چند برابر خروجی داشته باشن
           </p>
         </div>
       </div>
