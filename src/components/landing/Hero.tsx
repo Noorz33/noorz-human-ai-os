@@ -65,7 +65,7 @@ const Hero = () => {
           height={1920}
         />
         {/* Top overlay — softens transition from text to image */}
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-[18%] bg-gradient-to-b from-background via-background/80 to-transparent" />
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-[35%] bg-gradient-to-b from-background via-background/40 to-transparent" />
         {/* Bottom dark overlay — softens transition to next section */}
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[18%] bg-gradient-to-t from-background via-background/80 to-transparent" />
 
