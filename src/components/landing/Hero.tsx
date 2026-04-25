@@ -4,6 +4,37 @@ import { useEffect, useRef, useState } from "react";
 import heroImage from "@/assets/hero-noorz.png";
 
 const Hero = () => {
+  const figureRef = useRef<HTMLElement>(null);
+  const [offsetY, setOffsetY] = useState(0);
+
+  useEffect(() => {
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (prefersReducedMotion) return;
+
+    let rafId = 0;
+    const handleScroll = () => {
+      if (rafId) return;
+      rafId = window.requestAnimationFrame(() => {
+        if (figureRef.current) {
+          const rect = figureRef.current.getBoundingClientRect();
+          const viewportH = window.innerHeight;
+          if (rect.bottom > 0 && rect.top < viewportH) {
+            const progress = (rect.top + rect.height / 2 - viewportH / 2) / viewportH;
+            setOffsetY(progress * 80);
+          }
+        }
+        rafId = 0;
+      });
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (rafId) cancelAnimationFrame(rafId);
+    };
+  }, []);
+
   return (
     <section className="relative w-full overflow-hidden bg-hero pt-24 md:pt-28">
       {/* Atmospheric glow */}
