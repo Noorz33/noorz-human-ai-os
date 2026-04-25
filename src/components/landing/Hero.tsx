@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { UserRound, Sparkles } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 import heroImage from "@/assets/hero-noorz.png";
 
 const Hero = () => {
