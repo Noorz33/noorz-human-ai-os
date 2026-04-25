@@ -85,6 +85,7 @@ const Hero = () => {
 
       {/* Full-width hero image banner */}
       <figure
+        ref={figureRef}
         data-image-slot="hero"
         aria-label="جایگاه تصویر اصلی هیرو — قابل تعویض"
         className="relative mx-auto w-full max-w-[1600px] overflow-hidden"
@@ -92,7 +93,8 @@ const Hero = () => {
         <img
           src={heroImage}
           alt="حرفه‌ای در حال کار در شهری مشترک از انسان و هوش مصنوعی"
-          className="block h-auto w-full object-contain"
+          className="block h-auto w-full object-contain will-change-transform"
+          style={{ transform: `translate3d(0, ${offsetY}px, 0)` }}
           width={1920}
           height={1920}
         />
