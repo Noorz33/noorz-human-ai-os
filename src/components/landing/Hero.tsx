@@ -60,13 +60,13 @@ const Hero = () => {
         <img
           src={heroImage}
           alt="حرفه‌ای در حال کار در شهری مشترک از انسان و هوش مصنوعی"
-          className="h-[28vh] w-full object-cover sm:h-[34vh] md:h-[40vh] lg:h-[44vh]"
+          className="h-[28vh] w-full object-cover object-top sm:h-[34vh] md:h-[40vh] lg:h-[44vh]"
           width={1920}
           height={900}
         />
         {/* Cinematic gradient overlays for legibility */}
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-l from-background/40 via-transparent to-background/40" />
+        <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-background via-background/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-l from-background/30 via-transparent to-background/30" />
 
         {/* Brand chip */}
         <div className="absolute top-5 right-5 inline-flex items-center gap-2 rounded-full border border-hairline/70 bg-background/50 px-4 py-1.5 text-xs font-medium text-primary backdrop-blur">
