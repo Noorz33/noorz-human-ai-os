@@ -64,10 +64,10 @@ const Hero = () => {
           width={1920}
           height={1920}
         />
-        {/* Top overlay — 10% of image height */}
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-[10%] bg-gradient-to-b from-background via-background/70 to-transparent" />
-        {/* Bottom dark overlay — only 10% of image height */}
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[10%] bg-gradient-to-t from-background via-background/70 to-transparent" />
+        {/* Top overlay — softens transition from text to image */}
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-[18%] bg-gradient-to-b from-background via-background/80 to-transparent" />
+        {/* Bottom dark overlay — softens transition to next section */}
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[18%] bg-gradient-to-t from-background via-background/80 to-transparent" />
 
         {/* Brand chip */}
         <div className="absolute top-5 right-5 inline-flex items-center gap-2 rounded-full border border-hairline/70 bg-background/50 px-4 py-1.5 text-xs font-medium text-primary backdrop-blur">
