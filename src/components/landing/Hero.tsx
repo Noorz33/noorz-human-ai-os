@@ -55,18 +55,17 @@ const Hero = () => {
       <figure
         data-image-slot="hero"
         aria-label="جایگاه تصویر اصلی هیرو — قابل تعویض"
-        className="relative w-full overflow-hidden"
+        className="relative mx-auto w-full max-w-[1600px] overflow-hidden"
       >
         <img
           src={heroImage}
           alt="حرفه‌ای در حال کار در شهری مشترک از انسان و هوش مصنوعی"
-          className="h-[28vh] w-full object-cover object-top sm:h-[34vh] md:h-[40vh] lg:h-[44vh]"
+          className="block h-auto w-full object-contain"
           width={1920}
-          height={900}
+          height={1920}
         />
-        {/* Cinematic gradient overlays for legibility */}
-        <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-background via-background/40 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-l from-background/30 via-transparent to-background/30" />
+        {/* Bottom dark overlay — only 10% of image height */}
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[10%] bg-gradient-to-t from-background via-background/70 to-transparent" />
 
         {/* Brand chip */}
         <div className="absolute top-5 right-5 inline-flex items-center gap-2 rounded-full border border-hairline/70 bg-background/50 px-4 py-1.5 text-xs font-medium text-primary backdrop-blur">
