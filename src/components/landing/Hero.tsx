@@ -36,7 +36,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative w-full overflow-hidden bg-hero pt-24 md:pt-28">
+    <section className="relative w-full overflow-hidden bg-hero pt-16 md:pt-20">
       {/* Atmospheric glow */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute top-1/3 right-1/4 h-96 w-96 rounded-full bg-primary/10 blur-[140px] animate-pulse-glow" />
@@ -55,7 +55,7 @@ const Hero = () => {
       />
 
       <div className="container relative">
-        <div className="mx-auto max-w-4xl pt-6 pb-8 text-center animate-fade-up md:pt-10 md:pb-12">
+        <div className="mx-auto max-w-4xl pt-2 pb-4 text-center animate-fade-up md:pt-4 md:pb-6">
           {/* Human × AI icon mark */}
           <div className="mx-auto mb-6 inline-flex items-center gap-3 rounded-2xl border border-hairline/70 bg-surface/60 px-5 py-3 backdrop-blur">
             <span className="relative inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary/15 ring-1 ring-primary/40">
