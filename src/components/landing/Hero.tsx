@@ -1,8 +1,40 @@
 import { Button } from "@/components/ui/button";
 import { UserRound, Sparkles } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 import heroImage from "@/assets/hero-noorz.png";
 
 const Hero = () => {
+  const figureRef = useRef<HTMLElement>(null);
+  const [offsetY, setOffsetY] = useState(0);
+
+  useEffect(() => {
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (prefersReducedMotion) return;
+
+    let rafId = 0;
+    const handleScroll = () => {
+      if (rafId) return;
+      rafId = window.requestAnimationFrame(() => {
+        if (figureRef.current) {
+          const rect = figureRef.current.getBoundingClientRect();
+          const viewportH = window.innerHeight;
+          if (rect.bottom > 0 && rect.top < viewportH) {
+            const progress = (rect.top + rect.height / 2 - viewportH / 2) / viewportH;
+            setOffsetY(progress * 80);
+          }
+        }
+        rafId = 0;
+      });
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (rafId) cancelAnimationFrame(rafId);
+    };
+  }, []);
+
   return (
     <section className="relative w-full overflow-hidden bg-hero pt-24 md:pt-28">
       {/* Atmospheric glow */}
@@ -53,6 +85,7 @@ const Hero = () => {
 
       {/* Full-width hero image banner */}
       <figure
+        ref={figureRef}
         data-image-slot="hero"
         aria-label="جایگاه تصویر اصلی هیرو — قابل تعویض"
         className="relative mx-auto w-full max-w-[1600px] overflow-hidden"
@@ -60,7 +93,8 @@ const Hero = () => {
         <img
           src={heroImage}
           alt="حرفه‌ای در حال کار در شهری مشترک از انسان و هوش مصنوعی"
-          className="block h-auto w-full object-contain"
+          className="block h-auto w-full object-contain will-change-transform"
+          style={{ transform: `translate3d(0, ${offsetY}px, 0)` }}
           width={1920}
           height={1920}
         />
