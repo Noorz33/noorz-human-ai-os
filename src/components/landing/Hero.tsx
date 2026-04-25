@@ -64,6 +64,8 @@ const Hero = () => {
           width={1920}
           height={1920}
         />
+        {/* Top overlay — 10% of image height */}
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-[10%] bg-gradient-to-b from-background via-background/70 to-transparent" />
         {/* Bottom dark overlay — only 10% of image height */}
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[10%] bg-gradient-to-t from-background via-background/70 to-transparent" />
 
