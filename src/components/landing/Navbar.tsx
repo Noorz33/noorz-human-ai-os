@@ -46,12 +46,17 @@ const Navbar = () => {
           ))}
         </nav>
 
-        <Button variant="hero" size="sm" asChild className="hidden md:inline-flex">
-          <a href="#contact">جلسه معرفی</a>
-        </Button>
-        <Button variant="hero" size="sm" asChild className="md:hidden">
-          <a href="#contact">تماس</a>
-        </Button>
+        <div className="flex items-center gap-2">
+          <Button variant="outlineGlow" size="sm" asChild className="hidden md:inline-flex">
+            <a href="/present">حالت ارائه</a>
+          </Button>
+          <Button variant="hero" size="sm" asChild className="hidden md:inline-flex">
+            <a href="#contact">جلسه معرفی</a>
+          </Button>
+          <Button variant="hero" size="sm" asChild className="md:hidden">
+            <a href="#contact">تماس</a>
+          </Button>
+        </div>
       </div>
     </header>
   );
