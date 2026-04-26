@@ -164,6 +164,27 @@
   .section-pad {
     @apply py-14 md:py-20;
   }
+
+  /* Presentation mode: compact every section to fit a single viewport */
+  .presenting .section-pad {
+    @apply py-6 md:py-8;
+  }
+  .presenting section > .container > header,
+  .presenting section header {
+    @apply mb-6;
+  }
+  .presenting h1,
+  .presenting h2 {
+    font-size: clamp(1.5rem, 2.6vw, 2.5rem) !important;
+    line-height: 1.2 !important;
+  }
+  .presenting p {
+    font-size: clamp(0.9rem, 1.1vw, 1.05rem) !important;
+    line-height: 1.7 !important;
+  }
+  .presenting .container {
+    max-width: 88rem;
+  }
 }
 
 @layer utilities {
