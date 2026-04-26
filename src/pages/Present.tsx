@@ -98,11 +98,16 @@ const Present = () => {
   return (
     <div
       ref={containerRef}
-      className="relative h-screen w-screen overflow-hidden bg-background text-foreground"
+      className="presenting relative h-screen w-screen overflow-hidden bg-background text-foreground"
     >
       {/* Slide stage */}
-      <div key={slides[index].id} className="h-full w-full overflow-y-auto animate-fade-in">
-        <Current />
+      <div
+        key={slides[index].id}
+        className="flex h-full w-full items-center justify-center overflow-y-auto animate-fade-in"
+      >
+        <div className="w-full">
+          <Current />
+        </div>
       </div>
 
       {/* Top bar */}
