@@ -9,7 +9,7 @@ const sessions = [
   },
   {
     n: "02",
-    title: "Life As a active campaign",
+    title: "Google AI Tools",
     en: "Google Workspace",
     outcome: "بازطراحی فضای کار شخصی روی یک زیرساخت ساده، تمیز و قابل اتکا.",
   },
