@@ -62,7 +62,7 @@ const Problem = () => {
             نتیجه:
             <br />
             <span className="text-gradient-green">
-              مسئله، نبود ابزار نیست. نبود یک سیستم‌عامل شخصی برای کار با AI است.
+              مسئله، نبود ابزار نیست. 
             </span>
           </p>
         </div>
