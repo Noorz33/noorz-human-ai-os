@@ -36,12 +36,12 @@ const Problem = () => {
       eyebrow="مسئله‌ای که حل می‌کنیم"
       title={
         <>
-          مشکل کمبود ابزار نیست،
+          این دوره برای کسانیه که
           <br />
-          <span className="text-gradient-green">نبود یک لایه عملیاتی شخصی است.</span>
+          <span className="text-gradient-green">کار واقعی انجام میدن.</span>
         </>
       }
-      subtitle="حرفه‌ای‌ها امروز به ابزار جدید نیاز ندارند؛ به یک سیستم شخصی نیاز دارند که فکر خام را به ساختار، ساختار را به تصمیم، و تصمیم را به اجرا تبدیل کند."
+      subtitle="در پایان دوره، شرکت‌کننده با مجموعه‌ای از قابلیت‌های نصب‌شده روی کار روزمره‌اش بیرون می‌آید، شامل"
     >
       <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         {pains.map(({ icon: Icon, title, body }) => (

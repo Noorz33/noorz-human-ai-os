@@ -20,7 +20,7 @@ const Section = ({ id, eyebrow, title, subtitle, children, align = "right" }: Se
               <span className="font-display tracking-wider">{eyebrow}</span>
             </div>
           )}
-          <h2 className="font-display text-3xl font-bold leading-tight text-foreground md:text-5xl">
+          <h2 className="font-display text-3xl font-bold leading-tight text-foreground md:text-4xl">
             {title}
           </h2>
           {subtitle && (

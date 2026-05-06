@@ -9,7 +9,7 @@ const sessions = [
   },
   {
     n: "02",
-    title: "Google Workspace به‌عنوان زیرساخت",
+    title: "Life As a active campaign",
     en: "Google Workspace",
     outcome: "بازطراحی فضای کار شخصی روی یک زیرساخت ساده، تمیز و قابل اتکا.",
   },
@@ -85,8 +85,7 @@ const Curriculum = () => {
                 ورکشاپ نهایی ساخت خروجی
               </h3>
               <p className="mt-2 max-w-2xl text-sm leading-loose text-muted-foreground md:text-base">
-                هر شرکت‌کننده یک خروجی واقعی از نقش شغلی خودش را با استفاده از سیستمی که ساخته، تولید
-                و ارائه می‌کند.
+                {"\n"}
               </p>
             </div>
             <span className="font-display text-6xl font-bold text-primary/20 md:text-7xl">07</span>

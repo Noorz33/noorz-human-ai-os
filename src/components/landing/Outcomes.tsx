@@ -38,7 +38,7 @@ const Outcomes = () => {
         <>
           آنچه نصب می‌شود،
           <br />
-          <span className="text-gradient-green">نه آنچه فقط آموخته می‌شود.</span>
+          <span className="text-gradient-green"></span>
         </>
       }
       subtitle="در پایان دوره، شرکت‌کننده با مجموعه‌ای از قابلیت‌های نصب‌شده روی کار روزمره‌اش بیرون می‌آید — نه با چند فایل اسلاید."
