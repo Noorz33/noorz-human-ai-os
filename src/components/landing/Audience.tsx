@@ -22,7 +22,7 @@ const Audience = () => {
   return (
     <Section
       id="audience"
-      eyebrow="برای چه کسانی مناسب است؟"
+      eyebrow="برای چه کسانی مناسب؟"
       title={
         <>
           این دوره برای کسانی است که می‌خواهند
@@ -36,7 +36,7 @@ const Audience = () => {
             <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary/15 text-primary ring-1 ring-primary/40">
               <Check className="h-5 w-5" />
             </div>
-            <h3 className="font-display text-xl font-semibold text-primary">مناسب است</h3>
+            <h3 className="font-display text-xl font-semibold text-primary">مناسب</h3>
           </div>
           <ul className="space-y-4">
             {fits.map((f) => (
