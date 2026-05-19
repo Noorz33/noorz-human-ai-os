@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://noorz-human-ai-os.lovable.app/sitemap.xml
