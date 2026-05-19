@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { ChevronLeft, ChevronRight, Maximize2, Minimize2, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import Hero from "@/components/landing/Hero";
@@ -100,6 +101,15 @@ const Present = () => {
       ref={containerRef}
       className="presenting relative h-screen w-screen overflow-hidden bg-background text-foreground"
     >
+      <Helmet>
+        <title>حالت ارائه — Noorz</title>
+        <meta name="description" content="حالت ارائه اسلایدی دوره Noorz برای جلسات معرفی سازمانی؛ مرور سریع ساختار، خروجی‌ها و تفاوت‌های دوره." />
+        <meta name="robots" content="noindex" />
+        <link rel="canonical" href="https://noorz-human-ai-os.lovable.app/present" />
+        <meta property="og:url" content="https://noorz-human-ai-os.lovable.app/present" />
+        <meta property="og:title" content="حالت ارائه — Noorz" />
+        <meta property="og:description" content="حالت ارائه اسلایدی دوره Noorz برای جلسات معرفی سازمانی." />
+      </Helmet>
       {/* Slide stage */}
       <div
         key={slides[index].id}

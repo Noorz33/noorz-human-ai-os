@@ -97,6 +97,8 @@ const Hero = () => {
           style={{ transform: `translate3d(0, ${offsetY}px, 0)` }}
           width={1920}
           height={1920}
+          fetchPriority="high"
+          decoding="async"
         />
         {/* Top overlay — softens transition from text to image */}
         <div className="pointer-events-none absolute inset-x-0 top-0 h-[35%] bg-gradient-to-b from-background via-background/40 to-transparent" />
